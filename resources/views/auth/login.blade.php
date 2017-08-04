@@ -32,7 +32,7 @@
 
                                 @if ($errors->has('password'))
                                     <span class="help-block">
-                                        <strong>{{ $errors->first('password') }}</strong>
+                                        <strong>{!! $errors->first('password','<p class="help-block">:message</p>') !!}</strong>
                                     </span>
                                 @endif
                             </div>

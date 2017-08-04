@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests;
 use Illuminate\Http\Request;
 
-class mycontroller extends Controller
+class AuthorsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -33,13 +32,11 @@ class mycontroller extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request) {}
+    public function store(Request $request)
     {
         //
-          $this->validate($request, [
-            'name' => 'required',
-            'age' => 'required|min:17']);
-          //syntax lain
+    }
+
     /**
      * Display the specified resource.
      *
@@ -49,7 +46,7 @@ class mycontroller extends Controller
     public function show($id)
     {
         //
-    
+    }
 
     /**
      * Show the form for editing the specified resource.

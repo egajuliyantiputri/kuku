@@ -12,7 +12,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => env('APP_NAME', 'Laravel'),
+    'name' => 'Larapus',
 
     /*
     |--------------------------------------------------------------------------
@@ -64,7 +64,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Asia/Jakarta',
 
     /*
     |--------------------------------------------------------------------------
@@ -137,6 +137,7 @@ return [
 
     'providers' => [
 
+
         /*
          * Laravel Framework Service Providers...
          */
@@ -178,7 +179,8 @@ return [
         App\Providers\RouteServiceProvider::class,
         //Add plus
         Collective\Html\HtmlServiceProvider::class,
-
+     Laratrust\LaratrustServiceProvider::class,
+        // 
     ],
 
     /*
@@ -230,6 +232,8 @@ return [
         //Add plus
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
+     'Laratrust' => Laratrust\LaratrustFacade::class,
+
 
 
     ],
